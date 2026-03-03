@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pro Stopwatch</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="bg-animation"></div>
+
+<div class="stopwatch-card">
+
+    <div class="status-indicator" id="status"></div>
+
+    <h1>Stopwatch</h1>
+
+    <div class="time-display" id="display">
+        00:00:00:000
+    </div>
+
+    <div class="controls">
+        <button id="startPause">Start</button>
+        <button id="lapBtn">Lap</button>
+        <button id="resetBtn">Reset</button>
+    </div>
+
+    <div class="laps-section">
+        <h3>Lap History</h3>
+        <ul id="laps"></ul>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

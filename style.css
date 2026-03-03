@@ -1,0 +1,126 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+    background:#0f0f1a;
+}
+
+/* Animated Background */
+.bg-animation{
+    position:absolute;
+    width:200%;
+    height:200%;
+    background:linear-gradient(45deg,#0f2027,#2c5364,#1a2980,#000428);
+    background-size:400% 400%;
+    animation:gradientMove 15s ease infinite;
+    z-index:-1;
+}
+
+@keyframes gradientMove{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+.stopwatch-card{
+    width:95%;
+    max-width:500px;
+    padding:40px;
+    border-radius:20px;
+    backdrop-filter:blur(20px);
+    background:rgba(255,255,255,0.08);
+    box-shadow:0 15px 40px rgba(0,0,0,0.6);
+    text-align:center;
+    color:#fff;
+    transition:0.4s;
+}
+
+.stopwatch-card:hover{
+    transform:scale(1.02);
+}
+
+h1{
+    margin-bottom:20px;
+    letter-spacing:2px;
+}
+
+.time-display{
+    font-size:38px;
+    margin:20px 0;
+    font-weight:bold;
+    letter-spacing:2px;
+    text-shadow:0 0 15px #00f2ff;
+}
+
+.controls{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+button{
+    padding:12px 22px;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:14px;
+    font-weight:bold;
+    background:#00f2ff;
+    color:#000;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.1);
+    background:#fff;
+}
+
+.laps-section{
+    margin-top:20px;
+    max-height:180px;
+    overflow-y:auto;
+}
+
+ul{
+    list-style:none;
+    margin-top:10px;
+}
+
+li{
+    padding:8px;
+    margin:6px 0;
+    border-radius:8px;
+    background:rgba(255,255,255,0.1);
+    font-size:14px;
+    display:flex;
+    justify-content:space-between;
+}
+
+.fastest{
+    background:#00ff99;
+    color:#000;
+}
+
+.slowest{
+    background:#ff4d4d;
+    color:#fff;
+}
+
+.status-indicator{
+    width:12px;
+    height:12px;
+    border-radius:50%;
+    margin:0 auto 10px;
+    background:red;
+    box-shadow:0 0 10px red;
+}
