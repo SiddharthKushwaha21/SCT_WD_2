@@ -15,7 +15,7 @@ The application is designed with a modern, professional UI and includes advanced
 
 ## 🚀 Live Demo  
 
-🔗 https://sct-wd-2-siddharth.netlify.app  
+🔗 https://sct-wd-2-neon.vercel.app/  
 
 ---
 
